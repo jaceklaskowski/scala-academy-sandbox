@@ -1,0 +1,43 @@
+[0m[[0m[0mdebug[0m] [0m[0mBuilding Dockerfile:[0m
+[0m[[0m[0mdebug[0m] [0m[0mFROM openjdk:11-jre[0m
+[0m[[0m[0mdebug[0m] [0m[0mADD 0/scala-library-2.13.8.jar 1/scopt_2.13-4.0.1.jar /app/[0m
+[0m[[0m[0mdebug[0m] [0m[0mADD 2/docker-scopt_2.13-0.1.0-SNAPSHOT.jar /app/docker-scopt_2.13-0.1.0-SNAPSHOT.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mENTRYPOINT ["java", "-cp", "\/app\/scala-library-2.13.8.jar:\/app\/scopt_2.13-4.0.1.jar:\/app\/docker-scopt_2.13-0.1.0-SNAPSHOT.jar", "Main"][0m
+[0m[[0m[0mdebug[0m] [0m[0mPreparing stage directory 'C:\newprojects\docker-scopt\target\docker'[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning command: 'docker build --no-cache=false --rm=true --pull=false --progress=plain --file Dockerfile C:\newprojects\docker-scopt\target\docker'[0m
+[0m[[0m[0minfo[0m] [0m[0m#1 [internal] load build definition from Dockerfile[0m
+[0m[[0m[0minfo[0m] [0m[0m#1 sha256:fa4c862062edf1bb6e9270ebb2f326dc681680d5468dff9fe3738169eccfcaa5[0m
+[0m[[0m[0minfo[0m] [0m[0m#1 transferring dockerfile: 345B done[0m
+[0m[[0m[0minfo[0m] [0m[0m#1 DONE 0.0s[0m
+[0m[[0m[0minfo[0m] [0m[0m#2 [internal] load .dockerignore[0m
+[0m[[0m[0minfo[0m] [0m[0m#2 sha256:2175df9980346d84184e4d2a142fb5867c9c8b7d10ba2c76d980c0452f310a6d[0m
+[0m[[0m[0minfo[0m] [0m[0m#2 transferring context: 2B done[0m
+[0m[[0m[0minfo[0m] [0m[0m#2 DONE 0.0s[0m
+[0m[[0m[0minfo[0m] [0m[0m#3 [internal] load metadata for docker.io/library/openjdk:11-jre[0m
+[0m[[0m[0minfo[0m] [0m[0m#3 sha256:7c0f2652e62df917c5f26181495be6b35e9617cd12ef9d5ec413c73756b2cb6f[0m
+[0m[[0m[0minfo[0m] [0m[0m#3 ...[0m
+[0m[[0m[0minfo[0m] [0m[0m#4 [auth] library/openjdk:pull token for registry-1.docker.io[0m
+[0m[[0m[0minfo[0m] [0m[0m#4 sha256:b54cf52aef4490eae8572b4e1dae2153442a3f31d71cdd462c9d0300366337a6[0m
+[0m[[0m[0minfo[0m] [0m[0m#4 DONE 0.0s[0m
+[0m[[0m[0minfo[0m] [0m[0m#3 [internal] load metadata for docker.io/library/openjdk:11-jre[0m
+[0m[[0m[0minfo[0m] [0m[0m#3 sha256:7c0f2652e62df917c5f26181495be6b35e9617cd12ef9d5ec413c73756b2cb6f[0m
+[0m[[0m[0minfo[0m] [0m[0m#3 DONE 1.8s[0m
+[0m[[0m[0minfo[0m] [0m[0m#8 [1/3] FROM docker.io/library/openjdk:11-jre@sha256:797289f332e6bc2b0b58eccd10671c1bb76ab8155593096f10542862ca35fe47[0m
+[0m[[0m[0minfo[0m] [0m[0m#8 sha256:2a8393db29798fb8cc1724459103eb48280ab7bf6873b7cbc534602a1681785f[0m
+[0m[[0m[0minfo[0m] [0m[0m#8 DONE 0.0s[0m
+[0m[[0m[0minfo[0m] [0m[0m#5 [internal] load build context[0m
+[0m[[0m[0minfo[0m] [0m[0m#5 sha256:987bc758318e2c824b55f60b93b8b5d7f7625bfb03e8e5b111a7d66d38415bbb[0m
+[0m[[0m[0minfo[0m] [0m[0m#5 transferring context: 8.10kB done[0m
+[0m[[0m[0minfo[0m] [0m[0m#5 DONE 0.0s[0m
+[0m[[0m[0minfo[0m] [0m[0m#6 [2/3] ADD 0/scala-library-2.13.8.jar 1/scopt_2.13-4.0.1.jar /app/[0m
+[0m[[0m[0minfo[0m] [0m[0m#6 sha256:c30bf61f8891b23e0d9c7dae6e9e1dc4312e97393ac191df0f37c38169832de9[0m
+[0m[[0m[0minfo[0m] [0m[0m#6 CACHED[0m
+[0m[[0m[0minfo[0m] [0m[0m#7 [3/3] ADD 2/docker-scopt_2.13-0.1.0-SNAPSHOT.jar /app/docker-scopt_2.13-0.1.0-SNAPSHOT.jar[0m
+[0m[[0m[0minfo[0m] [0m[0m#7 sha256:e624c2f2748e49fe8f6883c7180c56242696d4f58e1550186cf9b7588bd80b6c[0m
+[0m[[0m[0minfo[0m] [0m[0m#7 DONE 0.1s[0m
+[0m[[0m[0minfo[0m] [0m[0m#9 exporting to image[0m
+[0m[[0m[0minfo[0m] [0m[0m#9 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00[0m
+[0m[[0m[0minfo[0m] [0m[0m#9 exporting layers 0.0s done[0m
+[0m[[0m[0minfo[0m] [0m[0m#9 writing image sha256:1204631ddba75ea8576eb36d053f9942a379be454d45e863a6936c93ddcfc6eb done[0m
+[0m[[0m[0minfo[0m] [0m[0m#9 DONE 0.1s[0m
+[0m[[0m[0minfo[0m] [0m[0mTagging image 1204631ddba75ea8576eb36d053f9942a379be454d45e863a6936c93ddcfc6eb with name: docker-scopt/docker-scopt[0m
