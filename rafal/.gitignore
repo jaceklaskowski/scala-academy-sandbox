@@ -3,7 +3,7 @@
 *.log
 
 #intellij
-.idea
+scopt-printer/.idea
 .bsp
 
 # sbt
