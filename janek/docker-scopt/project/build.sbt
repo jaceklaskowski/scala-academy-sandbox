@@ -31,3 +31,7 @@ docker / dockerfile := {
     entryPoint("java", "-cp", classpathString, mainclass)
   }
 }
+
+docker / imageNames := Seq(
+  // Sets the latest tag
+  ImageName(s"janek/docker-scopt:${version.value}")
