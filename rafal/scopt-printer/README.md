@@ -1,3 +1,3 @@
 ## Scopt printer
 
-a application with Scopt and Docker support.
+A simple application demonstrating Scopt and Docker usage. It prints out command line arguments marked with `-i` and `-o`.

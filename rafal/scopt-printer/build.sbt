@@ -32,6 +32,6 @@ docker / dockerfile := {
 
 docker / imageNames := Seq(
   // Sets the latest tag
-  ImageName("args-print-scopt"))
+  ImageName("rafal/scoptPrinter"))
 
 libraryDependencies += "com.github.scopt" %% "scopt" % "4.0.1"
