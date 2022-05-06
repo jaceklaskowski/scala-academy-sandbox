@@ -1,5 +1,5 @@
 ThisBuild / version := "0.1.0-SNAPSHOT"
-
+ThisBuild / organization := "adam"
 ThisBuild / scalaVersion := "2.13.8"
 
 lazy val root = (project in file("."))
@@ -24,12 +24,6 @@ ImageName(s"${organization.value}/${name.value}:latest")
     add(classpath.files, "/app/")
     add(jarFile, jarTarget)
     entryPoint("java", "-cp", classpathString, mainclass)
-
   }
 }
-val appName = "args-print-app"
-val appVersion = 1.0
-val versionName = s"_${appVersion.toString}"
 
-docker / imageNames := Seq(
-  ImageName(appName+versionName))
