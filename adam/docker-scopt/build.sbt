@@ -27,3 +27,9 @@ ImageName(s"${organization.value}/${name.value}:latest")
 
   }
 }
+val appName = "args-print-app"
+val appVersion = 1.0
+val versionName = s"_${appVersion.toString}"
+
+docker / imageNames := Seq(
+  ImageName(appName+versionName))

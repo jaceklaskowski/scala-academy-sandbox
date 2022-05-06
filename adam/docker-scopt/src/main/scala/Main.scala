@@ -1,7 +1,7 @@
 import scopt.OParser
 
 object Main extends App {
-  case class Config(numbers: Int, words: String)
+  case class Config(numbers: Int = 999, words: String = "")
 
   val myBuilder = OParser.builder[Config]
 
@@ -24,10 +24,7 @@ object Main extends App {
   val config = OParser.parse(
     myParser,
     args,
-    Config(numbers = 999, words = "")).getOrElse {
-    println("Not enough or incorrect command-line arguments. Exiting...")
-    sys.exit(-1)
-  }
+    Config()).get
 
   println(s"Numbers: ${config.numbers} ------> Words: ${config.words}")
 }
